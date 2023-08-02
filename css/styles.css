@@ -1,0 +1,266 @@
+font-family: 'Barlow',
+sans-serif;
+font-family: 'DM Sans',
+sans-serif;
+font-family: 'DM Serif Display',
+serif;
+font-family: 'Fraunces',
+serif;
+font-family: 'Manrope',
+sans-serif;
+font-family: 'Public Sans',
+sans-serif;
+font-family: 'Roboto Mono',
+monospace;
+
+p,
+a,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+section.shop {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 102px;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 68px;
+    padding-bottom: 168px;
+
+}
+
+.shop.listen {
+    width: 350px;
+    height: 204px;
+    border-radius: 8px;
+    background: #F1F1F1;
+    position: relative;
+    text-align: center;
+
+}
+
+.shop p {
+    padding-top: 116px;
+    margin: 0;
+    margin-bottom: 15px;
+    color: #000;
+    text-align: center;
+    font-family: Manrope, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.286px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Manrope, sans-serif;
+    ;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+
+a::after {
+
+    content: url(../assets/icon/arrow.svg);
+    padding-left: 13px;
+
+}
+
+.foto {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.foto.tablet {
+    display: none;
+}
+
+.foto.headphones {
+    top: -80px;
+}
+
+.foto.speakers {
+    top: -72px;
+}
+
+.foto.earphones {
+    top: -59px;
+}
+
+section.produkt {
+    width: 1110px;
+    min-height: 560px;
+    border-radius: 8px;
+    background: #D87D4A;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../assets/backgraund/Group\ around.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 138px;
+    row-gap: 64px;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+
+.produkt_speakers-big-tablet {
+    display: none;
+}
+
+
+
+article.content {
+    width: 349px;
+    height: 303px;
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 130px;
+}
+
+h1 {
+    color: #FFF;
+    font-family: Manrope,
+        sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+p.produkt {
+    width: 349px;
+    height: 75px;
+    margin: 0;
+    margin-bottom: 40px;
+    color: #FFF;
+    font-family: Manrope,
+        sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px
+}
+
+a button {
+    width: 160px;
+    height: 48px;
+    background: #000;
+    color: #FFF;
+    font-family: Manrope,
+        sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+
+@media(max-width:850px) {
+    section.shop {
+        padding-top: 23px;
+        margin-top: 52px;
+    }
+
+    .foto {
+        display: none;
+    }
+
+    .foto.tablet {
+        display: block;
+
+
+    }
+
+    .shop.listen {
+        width: 223px;
+        height: 165px;
+    }
+
+    .foto.tablet {
+        top: -52px;
+    }
+
+    .shop p {
+        padding-top: 88px;
+        margin-bottom: 17px;
+        font-size: 15px;
+        letter-spacing: 1.071px;
+    }
+
+    section.produkt {
+        width: 689px;
+        background-image: url(../assets/backgraund/Group\ around\ tablet.svg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article.content {
+        padding-bottom: 64px;
+        text-align: center;
+    }
+
+    .produkt_speakers-big {
+        display: none;
+    }
+
+    .produkt_speakers-big-tablet {
+        display: block;
+        padding-top: 52px;
+        /* display: flex; */
+
+    }
+
+    button {
+        padding: 0;
+    }
+}
+
+@media(max-width:450px) {
+
+    section.shop {
+        
+        padding: 0;
+        margin-bottom: 120px;
+        padding-top: 48px;
+    }
+
+    .shop.listen {
+        width: 327px;
+        height: 165px;
+    
+    }
+    section.produkt {
+        width: 327px;
+        background-image: url(../assets/backgraund/Group\ around\ phone.svg);
+    }
+}
